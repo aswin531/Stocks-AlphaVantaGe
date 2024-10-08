@@ -11,18 +11,11 @@ class SplashScreen extends StatelessWidget {
           MaterialPageRoute(builder: (context) => const Navbarscreen()));
     });
 
-    return Scaffold(
+    return const Scaffold(
       backgroundColor: Colors.black,
       body: Stack(
         children: [
           Center(
-            child: Image.asset(
-              'assets/images/premium.jpg',
-              width: 200,
-              height: 200,
-            ),
-          ),
-          const Center(
             child: Text(
               'Loading...',
               style: TextStyle(fontSize: 20, color: Colors.white),
